@@ -1,19 +1,13 @@
 <template>
-  <div class="hello">
-    hello
+  <div class="hello" >
+    {{msg}}
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
 
-// interface ITest {
-//   [propName: string]: any;
-// }
-
-
-export default class HelloWorld extends Vue {
-  msg!: String
+export default {
+  props: ['msg']
 }
 </script>
 
